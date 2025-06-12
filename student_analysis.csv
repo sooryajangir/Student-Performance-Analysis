@@ -1,0 +1,11 @@
+,Name,Math,Physics,Chemistry,English,Average,Results
+0,Asha,78,82,69,88,79.25,PASS
+1,Rahul,56,44,51,60,52.75,PASS
+2,Sneha,90,92,88,95,91.25,PASS
+3,Ajay,35,30,25,50,35.0,FAIL
+4,Meena,62,75,80,70,71.75,PASS
+5,Karan,45,55,48,52,50.0,PASS
+6,Neha,88,85,90,87,87.5,PASS
+7,Ravi,20,25,30,45,30.0,FAIL
+8,Simran,65,72,68,77,70.5,PASS
+9,Aman,95,98,91,94,94.5,PASS

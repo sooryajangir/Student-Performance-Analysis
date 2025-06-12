@@ -1,0 +1,25 @@
+import pandas as pd
+import matplotlib.pyplot as plt 
+df=pd.read_csv("student_scores.csv")
+#Analyzes performance: average, top scores, subject-wise trends Shows useful insights
+print("Average scores of the students are as follows:")
+df["Average"]=df[['Math', 'Physics', 'Chemistry', 'English']].mean(axis=1)
+print(df)
+print("Topper of the class :")
+print(df.loc[df['Average'].idxmax()])
+print("Failed students :")
+df['Results']=df[df[['Math', 'Physics', 'Chemistry', 'English']]<35].any(axis=1).map({True:"FAIL",False:"PASS"})
+print(df)
+
+plt.plot(df['Name'],df['Average'],marker="o")
+plt.title("Name VS Average")
+plt.xlabel("Name")
+plt.ylabel('Average')
+plt.grid()
+plt.show()
+r=df["Results"].value_counts()
+plt.pie(r,labels=r.index,autopct='%1.1f%%')
+plt.title("pass fail distribution")
+plt.axis("equal")
+plt.show()
+df.to_csv("student_analysis.csv")
