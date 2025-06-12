@@ -22,4 +22,5 @@ This project analyzes the marks of students in subjects like Math, Physics, Chem
 - Matplotlib
 
 🚀 Author
+
 Soorya Jangir
